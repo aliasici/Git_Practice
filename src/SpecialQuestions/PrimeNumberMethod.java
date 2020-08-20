@@ -5,12 +5,12 @@ public class PrimeNumberMethod {
         isPrime(45);
 
     }
-
     public static int isPrime(int number){
         boolean prime = true;
         for(int i = 1; i < number; i++){
 
             int k =2;
+
             while(k < number /2){
                 if(number % k == 0){
                     prime = false;
@@ -18,8 +18,6 @@ public class PrimeNumberMethod {
                 }
                 k++;
             }
-
-
         }
         if(prime){
             System.out.println(number+" is a prime");
